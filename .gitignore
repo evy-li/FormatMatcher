@@ -216,12 +216,10 @@ lerna-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
-.cache/
 .parcel-cache/
 .next/
 out/
 .nuxt/
-dist/
 .vuepress/dist
 .serverless/
 .fusebox/
@@ -284,7 +282,6 @@ vendor/
 # Rust
 debug/
 target/
-Cargo.lock
 **/*.rs.bk
 *.pdb
 
@@ -314,15 +311,9 @@ Cargo.lock
 *.hex
 *.d
 *.slo
-*.lo
-*.o
-*.obj
 *.mod
 *.smod
 *.lai
-*.la
-*.a
-*.lib
 
 # .NET / C#
 [Dd]ebug/
@@ -392,10 +383,6 @@ StyleCopReport.xml
 *.tmp
 *.vspscc
 *.vssscc
-.builds
-*.pidb
-*.svclog
-*.scc
 !?*.[Cc]ache/
 Generated_Code/
 _Pvt_Extensions/
@@ -572,7 +559,6 @@ config/secrets.yml
 
 # OS generated files
 .DS_Store?
-._*
 
 # Documentation build
 _site/
@@ -598,7 +584,9 @@ junit.xml
 *.crt
 *.p12
 
-# Lock files (optional - uncomment if needed)
+# Lock files (optional - uncomment if needed for libraries)
+# Note: For applications, keep lock files checked in
+# For libraries, you may want to ignore them
 # Cargo.lock
 # composer.lock
 # Gemfile.lock
