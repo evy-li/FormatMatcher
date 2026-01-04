@@ -462,8 +462,11 @@ DerivedData/
 #####################
 
 # npm/yarn
-package-lock.json
-yarn.lock
+# Note: Lock files (package-lock.json, yarn.lock) are commented out by default.
+# For applications: Keep them uncommented to ensure reproducible builds
+# For libraries: Comment them out to allow flexible dependency resolution
+# package-lock.json
+# yarn.lock
 .pnpm-store/
 .yarn/*
 !.yarn/patches
